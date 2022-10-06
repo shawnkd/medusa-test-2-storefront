@@ -17,9 +17,10 @@ const FooterNav = () => {
             <Image
             src="/osf-logo.jpeg"
             alt=""
-            layout="fixed"
+            width="200"
+            height="50"
             // objectFit="cover"
-            className="absolute inset-0"
+            // className="absolute inset-0"
           />
           </Link>
         </div>
