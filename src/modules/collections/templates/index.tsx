@@ -35,9 +35,11 @@ const CollectionTemplate: React.FC<CollectionTemplateProps> = ({
         pageParam,
         id: collection.id,
         cartId: cart?.id,
+        
       }),
     {
       getNextPageParam: (lastPage) => lastPage.nextPage,
+      retry: 10,
     }
   )
 
