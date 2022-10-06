@@ -39,7 +39,7 @@ const CollectionTemplate: React.FC<CollectionTemplateProps> = ({
       }),
     {
       getNextPageParam: (lastPage) => lastPage.nextPage,
-      retry: 10,
+      
     }
   )
 
