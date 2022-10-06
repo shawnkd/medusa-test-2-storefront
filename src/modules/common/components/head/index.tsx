@@ -17,7 +17,7 @@ const Head: React.FC<HeadProps> = ({ title, description, image }) => {
       <meta itemProp="og:description" content="by cammi casino"/>
       <meta property="og:image" content="/osf-logo.jpeg" />
       {description && <meta itemProp="description" content="by cammi casino" />}
-      {image && <meta itemProp="image" content={image} />}
+      {/* {image && <meta itemProp="image" content={image} />} */}
       <link rel="icon" href="/favicon.ico" />
     </NextHead>
   )
