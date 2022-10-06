@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           {/* <meta name="twitter:card" content="by cammi casino" /> */}
-          <meta itemProp="og:image" content="/osf-logo.jpeg" />
+          {/* <meta itemProp="og:image" content="/osf-logo.jpeg" /> */}
           
         </Head>
         <body>
