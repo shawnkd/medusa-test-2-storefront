@@ -2,6 +2,8 @@ import clsx from "clsx"
 import { useCollections } from "medusa-react"
 import Link from "next/link"
 import CountrySelect from "../country-select"
+import Image from "next/image"
+
 
 const FooterNav = () => {
   const { collections } = useCollections()
@@ -11,10 +13,17 @@ const FooterNav = () => {
       <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
         <div>
           <Link href="/">
-            <a className="text-xl-semi uppercase">Os Fragiles</a>
+            {/* <a className="text-xl-semi uppercase">Os Fragiles</a> */}
+            <Image
+            src="/osf-logo.jpeg"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0"
+          />
           </Link>
         </div>
-        <div className="text-small-regular grid grid-cols-2 gap-x-16">
+        {/* <div className="text-small-regular grid grid-cols-2 gap-x-16">
           <div className="flex flex-col gap-y-2">
             <span className="text-base-semi">Collections</span>
             <ul
@@ -64,7 +73,7 @@ const FooterNav = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:items-end xsmall:justify-between">
         <span className="text-xsmall-regular text-gray-500">
           © Copyright 2022 OS FRAGILES
