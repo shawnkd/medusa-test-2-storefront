@@ -12,8 +12,10 @@ const Head: React.FC<HeadProps> = ({ title, description, image }) => {
     <NextHead>
       <title>{title} | OS FRAGILES</title>
       <meta itemProp="name" content={title} />
-      {description && <meta itemProp="description" content={description} />}
-      {image && <meta itemProp="image" content={image} />}
+      <meta name="twitter:card" content="by cammi casino" />
+      <meta property="og:image" content="/osf-logo.jpeg" />
+      {description && <meta itemProp="description" content="by cammi casino" />}
+      {image && <meta itemProp="image" content="/osf-logo"/>}
       <link rel="icon" href="/favicon.ico" />
     </NextHead>
   )
