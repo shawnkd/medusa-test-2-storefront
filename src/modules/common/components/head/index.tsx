@@ -10,8 +10,8 @@ type HeadProps = {
 const Head: React.FC<HeadProps> = ({ title, description, image }) => {
   return (
     <NextHead>
-      <title>{title} | OS FRAGILES</title>
-      <meta itemProp="name" content={title} />
+      <title>OS FRAGILES</title>
+      <meta name="description" content="by cammi casino" />
       <meta itemProp="twitter:card" content="by cammi casino" />
       <meta itemProp="og:image" content="/osf-logo.jpeg" />
       {description && <meta itemProp="description" content="by cammi casino" />}
